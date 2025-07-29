@@ -1,0 +1,100 @@
+/* Skills Matrix Styles */
+.skill {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.skill-level {
+    height: 10px;
+    background: #e0e0e0;
+    border-radius: 5px;
+    margin-left: 1rem;
+    flex-grow: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-level::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: var(--primary);
+    border-radius: 5px;
+}
+
+.skill[data-level="expert"] .skill-level::after {
+    width: 90%;
+}
+.skill[data-level="advanced"] .skill-level::after {
+    width: 75%;
+}
+.skill[data-level="intermediate"] .skill-level::after {
+    width: 60%;
+}
+.skill[data-level="beginner"] .skill-level::after {
+    width: 40%;
+}
+
+/* Timeline Styles */
+.timeline {
+    position: relative;
+    padding-left: 50px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--primary);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.timeline-date {
+    position: absolute;
+    left: -50px;
+    width: 100px;
+    text-align: right;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.timeline-content {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.toggle-details {
+    background: none;
+    border: none;
+    color: var(--primary);
+    cursor: pointer;
+    padding: 0;
+    margin: 0.5rem 0;
+}
+
+.details {
+    display: none;
+    margin-top: 1rem;
+}
+
+.tech-tag {
+    display: inline-block;
+    background: #f0f0f0;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+}
