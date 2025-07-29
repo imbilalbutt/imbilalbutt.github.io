@@ -131,6 +131,25 @@ h2::after {
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
+.profile-container {
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #3498db;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Adjust header spacing */
+header {
+    padding-bottom: 1rem;
+}
+
 .about-text {
     flex: 1;
 }
